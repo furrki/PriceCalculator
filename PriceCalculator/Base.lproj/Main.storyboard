@@ -24,22 +24,64 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cWY-10-Pl7">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ZX-EVu" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="188" width="254" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-nq-9sc" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="60.5" y="212" width="254" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="254" id="nq9-a6-Ve8"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-nq-9sc" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="142" width="254" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ZX-EVu" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
+                                        <rect key="frame" x="60.5" y="262" width="254" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="254" id="Igx-OW-7KM"/>
+                                        </constraints>
                                         <nil key="textColor"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-N0-83z">
+                                        <rect key="frame" x="114.5" y="361" width="146" height="53"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-un-ftN">
+                                                <rect key="frame" x="0.0" y="0.0" width="146" height="37"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="37" id="JqC-PK-4nE"/>
+                                                    <constraint firstAttribute="width" constant="146" id="mq0-Dq-nux"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ThK-JG-Osf">
+                                                <rect key="frame" x="58" y="39" width="30" height="14"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ThK-JG-Osf" firstAttribute="top" secondItem="mrA-un-ftN" secondAttribute="bottom" constant="2" id="3WO-OG-8Ix"/>
+                                            <constraint firstAttribute="bottom" secondItem="ThK-JG-Osf" secondAttribute="bottom" id="95c-Fh-tVb"/>
+                                            <constraint firstItem="mrA-un-ftN" firstAttribute="leading" secondItem="cpq-N0-83z" secondAttribute="leading" id="CVL-S9-FSZ"/>
+                                            <constraint firstItem="mrA-un-ftN" firstAttribute="top" secondItem="cpq-N0-83z" secondAttribute="top" id="VxS-U6-Enp"/>
+                                            <constraint firstItem="mrA-un-ftN" firstAttribute="centerX" secondItem="ThK-JG-Osf" secondAttribute="centerX" id="tE8-9G-iVp"/>
+                                            <constraint firstItem="mrA-un-ftN" firstAttribute="centerX" secondItem="cpq-N0-83z" secondAttribute="centerX" id="ttQ-2y-Q5W"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.55642055457746475" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ojD-nq-9sc" firstAttribute="top" secondItem="cWY-10-Pl7" secondAttribute="top" constant="212" id="89l-js-Wgj"/>
+                                    <constraint firstItem="3YH-ZX-EVu" firstAttribute="centerX" secondItem="cWY-10-Pl7" secondAttribute="centerX" id="Mbz-9w-R3i"/>
+                                    <constraint firstItem="cpq-N0-83z" firstAttribute="centerX" secondItem="cWY-10-Pl7" secondAttribute="centerX" id="Ri6-1f-lU9"/>
+                                    <constraint firstItem="3YH-ZX-EVu" firstAttribute="top" secondItem="ojD-nq-9sc" secondAttribute="bottom" constant="20" id="mVx-UW-BgH"/>
+                                    <constraint firstItem="cpq-N0-83z" firstAttribute="top" secondItem="3YH-ZX-EVu" secondAttribute="bottom" constant="69" id="rTb-xt-3xZ"/>
+                                    <constraint firstItem="ojD-nq-9sc" firstAttribute="centerX" secondItem="cWY-10-Pl7" secondAttribute="centerX" id="uSQ-ob-gVD"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -55,6 +97,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="hourLabel" destination="mrA-un-ftN" id="zzG-ne-1OO"/>
+                        <outlet property="priceTf" destination="3YH-ZX-EVu" id="WXO-eJ-fTv"/>
+                        <outlet property="showLabel" destination="ThK-JG-Osf" id="YLz-72-tiI"/>
+                        <outlet property="wageTf" destination="ojD-nq-9sc" id="zeu-R3-BcG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

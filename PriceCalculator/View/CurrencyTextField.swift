@@ -41,7 +41,7 @@ class CurrencyTextField: UITextField {
         if let p = placeholder {
             let place = NSAttributedString(string: p, attributes: [.foregroundColor: UIColor.black ] )
             attributedPlaceholder = place
-            textColor = .black
+            textColor = .darkGray
         }
     }
 
