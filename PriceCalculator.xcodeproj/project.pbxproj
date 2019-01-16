@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		84B3512621EFC82A00163D6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3512521EFC82A00163D6C /* AppDelegate.swift */; };
-		84B3512821EFC82A00163D6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3512721EFC82A00163D6C /* ViewController.swift */; };
+		84B3512821EFC82A00163D6C /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3512721EFC82A00163D6C /* MainVC.swift */; };
 		84B3512B21EFC82A00163D6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B3512921EFC82A00163D6C /* Main.storyboard */; };
 		84B3512D21EFC82D00163D6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B3512C21EFC82D00163D6C /* Assets.xcassets */; };
 		84B3513021EFC82D00163D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B3512E21EFC82D00163D6C /* LaunchScreen.storyboard */; };
 		84B3513B21EFC82D00163D6C /* PriceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3513A21EFC82D00163D6C /* PriceCalculatorTests.swift */; };
 		84B3514621EFC82D00163D6C /* PriceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3514521EFC82D00163D6C /* PriceCalculatorUITests.swift */; };
+		84B3515521EFCBD000163D6C /* darkbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B3515421EFCBD000163D6C /* darkbg.jpg */; };
+		84B3515921EFCF8700163D6C /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3515821EFCF8700163D6C /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		84B3512221EFC82A00163D6C /* PriceCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PriceCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3512521EFC82A00163D6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84B3512721EFC82A00163D6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		84B3512721EFC82A00163D6C /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		84B3512A21EFC82A00163D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84B3512C21EFC82D00163D6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84B3512F21EFC82D00163D6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		84B3514121EFC82D00163D6C /* PriceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3514521EFC82D00163D6C /* PriceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculatorUITests.swift; sourceTree = "<group>"; };
 		84B3514721EFC82D00163D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84B3515421EFCBD000163D6C /* darkbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkbg.jpg; sourceTree = "<group>"; };
+		84B3515821EFCF8700163D6C /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +101,10 @@
 		84B3512421EFC82A00163D6C /* PriceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				84B3515721EFCF3B00163D6C /* View */,
+				84B3515621EFCF0600163D6C /* Controller */,
+				84B3515321EFCBB100163D6C /* Image */,
 				84B3512521EFC82A00163D6C /* AppDelegate.swift */,
-				84B3512721EFC82A00163D6C /* ViewController.swift */,
 				84B3512921EFC82A00163D6C /* Main.storyboard */,
 				84B3512C21EFC82D00163D6C /* Assets.xcassets */,
 				84B3512E21EFC82D00163D6C /* LaunchScreen.storyboard */,
@@ -123,6 +129,30 @@
 				84B3514721EFC82D00163D6C /* Info.plist */,
 			);
 			path = PriceCalculatorUITests;
+			sourceTree = "<group>";
+		};
+		84B3515321EFCBB100163D6C /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				84B3515421EFCBD000163D6C /* darkbg.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		84B3515621EFCF0600163D6C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B3512721EFC82A00163D6C /* MainVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		84B3515721EFCF3B00163D6C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B3515821EFCF8700163D6C /* CurrencyTextField.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B3515521EFCBD000163D6C /* darkbg.jpg in Resources */,
 				84B3513021EFC82D00163D6C /* LaunchScreen.storyboard in Resources */,
 				84B3512D21EFC82D00163D6C /* Assets.xcassets in Resources */,
 				84B3512B21EFC82A00163D6C /* Main.storyboard in Resources */,
@@ -256,7 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B3512821EFC82A00163D6C /* ViewController.swift in Sources */,
+				84B3515921EFCF8700163D6C /* CurrencyTextField.swift in Sources */,
+				84B3512821EFC82A00163D6C /* MainVC.swift in Sources */,
 				84B3512621EFC82A00163D6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
