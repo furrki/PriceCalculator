@@ -25,7 +25,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-nq-9sc" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="272" width="254" height="30"/>
+                                        <rect key="frame" x="60.5" y="272" width="254" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="254" id="nq9-a6-Ve8"/>
                                         </constraints>
@@ -34,7 +34,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ZX-EVu" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
-                                        <rect key="frame" x="60" y="322" width="254" height="30"/>
+                                        <rect key="frame" x="60.5" y="322" width="254" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="254" id="Igx-OW-7KM"/>
                                         </constraints>
@@ -43,7 +43,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-N0-83z">
-                                        <rect key="frame" x="114" y="421" width="146" height="53"/>
+                                        <rect key="frame" x="114.5" y="421" width="146" height="53"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-un-ftN">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="37"/>
@@ -51,7 +51,7 @@
                                                     <constraint firstAttribute="height" constant="37" id="JqC-PK-4nE"/>
                                                     <constraint firstAttribute="width" constant="146" id="mq0-Dq-nux"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
