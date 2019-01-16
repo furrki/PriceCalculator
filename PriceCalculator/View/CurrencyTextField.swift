@@ -26,6 +26,7 @@ class CurrencyTextField: UITextField {
         currencyLbl.textColor = .white
         currencyLbl.layer.borderWidth = 2
         currencyLbl.layer.cornerRadius = 10.0
+        currencyLbl.layer.opacity = 0.7
         let formatter = NumberFormatter()
         formatter.numberStyle = .currency
         formatter.locale = Locale.current
@@ -35,6 +36,13 @@ class CurrencyTextField: UITextField {
     func custom(){
         layer.borderWidth = 2
         layer.cornerRadius = 5
+        layer.opacity = 0.8
+        textAlignment = .center
+        if let p = placeholder {
+            let place = NSAttributedString(string: p, attributes: [.foregroundColor: UIColor.black ] )
+            attributedPlaceholder = place
+            textColor = .black
+        }
     }
 
 }
