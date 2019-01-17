@@ -25,7 +25,7 @@ class MainVC: UIViewController {
         calcBtn.backgroundColor = UIColor.gray
         calcBtn.setTitle("Calculate", for: .normal)
         calcBtn.setTitleColor(.black, for: .normal)
-        calcBtn.addTarget(self, action: #selector(self.calculate), for: .touchUpInside)
+        calcBtn.addTarget(self, action: #selector(self.calculateBtnClicked), for: .touchUpInside)
         
         priceTf.inputAccessoryView = calcBtn
         wageTf.inputAccessoryView = calcBtn
@@ -36,11 +36,13 @@ class MainVC: UIViewController {
         let tap = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
         view.addGestureRecognizer(tap)
     }
+    
     @objc func dismissKeyboard(){
         view.endEditing(true)
     }
+    
     @objc func keyboardWillShow(notification: NSNotification) {
-        if let keyboardSize = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
+        if let _ = (notification.userInfo?[UIResponder.keyboardFrameBeginUserInfoKey] as? NSValue)?.cgRectValue {
             if self.view.frame.origin.y == 0 {
                 self.view.frame.origin.y -= 180
             }
@@ -56,15 +58,18 @@ class MainVC: UIViewController {
         return UIStatusBarStyle.lightContent
         //return UIStatusBarStyle.default   // Make dark again
     }
-    @objc func calculate(){
+    @objc func calculateBtnClicked(){
         if let price = Int(priceTf.text!), let wage = Int(wageTf.text!) {
-            hourLabel.text = String(price / wage)
+            hourLabel.text = String(calculate(price: price, wage: wage))
             let _ = labelsToToggle.map({
                 $0.isHidden = false
             })
         }
-        
         view.endEditing(true)
+    }
+    
+    @objc func calculate(price: Int, wage: Int) -> Double {
+        return ceil(Double(price)/Double(wage))
     }
 }
 
