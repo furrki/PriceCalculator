@@ -9,9 +9,9 @@ pod install
 ```
 
 # ScreenShots 
-![Alt text](Screenshots/ss1.jpeg?raw=true "Main Screen")
-![Alt text](Screenshots/ss2.jpeg?raw=true "Main Screen 2")
-![Alt text](Screenshots/ss3.jpeg?raw=true "Main Screen 3")
+![Alt text](screenshots/ss1.jpeg?raw=true "Main Screen")
+![Alt text](screenshots/ss2.jpeg?raw=true "Main Screen 2")
+![Alt text](screenshots/ss3.jpeg?raw=true "Main Screen 3")
 
 # Author
 furrki --> furkankaynary@gmail.com
