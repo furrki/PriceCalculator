@@ -14,11 +14,11 @@
 		84B3513021EFC82D00163D6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84B3512E21EFC82D00163D6C /* LaunchScreen.storyboard */; };
 		84B3513B21EFC82D00163D6C /* PriceCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3513A21EFC82D00163D6C /* PriceCalculatorTests.swift */; };
 		84B3514621EFC82D00163D6C /* PriceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3514521EFC82D00163D6C /* PriceCalculatorUITests.swift */; };
-		84B3515521EFCBD000163D6C /* darkbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B3515421EFCBD000163D6C /* darkbg.jpg */; };
 		84B3515921EFCF8700163D6C /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3515821EFCF8700163D6C /* CurrencyTextField.swift */; };
 		84DD88E221F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
 		84DD88E321F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
 		84DD88E421F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
+		84DF20EF21F12ABC0062D2A3 /* darkbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84DF20EE21F12ABC0062D2A3 /* darkbg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,9 +52,9 @@
 		84B3514121EFC82D00163D6C /* PriceCalculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PriceCalculatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B3514521EFC82D00163D6C /* PriceCalculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceCalculatorUITests.swift; sourceTree = "<group>"; };
 		84B3514721EFC82D00163D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		84B3515421EFCBD000163D6C /* darkbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkbg.jpg; sourceTree = "<group>"; };
 		84B3515821EFCF8700163D6C /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 		84DD88E121F0D48C0083BC37 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
+		84DF20EE21F12ABC0062D2A3 /* darkbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkbg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,7 +139,7 @@
 		84B3515321EFCBB100163D6C /* Image */ = {
 			isa = PBXGroup;
 			children = (
-				84B3515421EFCBD000163D6C /* darkbg.jpg */,
+				84DF20EE21F12ABC0062D2A3 /* darkbg.jpg */,
 			);
 			path = Image;
 			sourceTree = "<group>";
@@ -272,8 +272,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84B3515521EFCBD000163D6C /* darkbg.jpg in Resources */,
 				84B3513021EFC82D00163D6C /* LaunchScreen.storyboard in Resources */,
+				84DF20EF21F12ABC0062D2A3 /* darkbg.jpg in Resources */,
 				84B3512D21EFC82D00163D6C /* Assets.xcassets in Resources */,
 				84B3512B21EFC82A00163D6C /* Main.storyboard in Resources */,
 			);
