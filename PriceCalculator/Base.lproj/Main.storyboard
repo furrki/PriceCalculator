@@ -26,6 +26,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Your hourly wage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-nq-9sc" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
                                         <rect key="frame" x="60.5" y="272" width="254" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="wageTf"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="254" id="nq9-a6-Ve8"/>
                                         </constraints>
@@ -35,6 +36,7 @@
                                     </textField>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Item price" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3YH-ZX-EVu" customClass="CurrencyTextField" customModule="PriceCalculator" customModuleProvider="target">
                                         <rect key="frame" x="60.5" y="322" width="254" height="30"/>
+                                        <accessibility key="accessibilityConfiguration" label="priceTf"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="254" id="Igx-OW-7KM"/>
                                         </constraints>
@@ -47,6 +49,7 @@
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-un-ftN">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="37"/>
+                                                <accessibility key="accessibilityConfiguration" label="hoursTf"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="JqC-PK-4nE"/>
                                                     <constraint firstAttribute="width" constant="146" id="mq0-Dq-nux"/>
