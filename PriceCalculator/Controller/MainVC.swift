@@ -60,7 +60,7 @@ class MainVC: UIViewController {
     }
     @objc func calculateBtnClicked(){
         if let price = Int(priceTf.text!), let wage = Int(wageTf.text!) {
-            hourLabel.text = String(calculate(price: price, wage: wage))
+            hourLabel.text = String(Wage.getHours(forWage: wage, andPrice: price))
             let _ = labelsToToggle.map({
                 $0.isHidden = false
             })
@@ -68,8 +68,6 @@ class MainVC: UIViewController {
         view.endEditing(true)
     }
     
-    @objc func calculate(price: Int, wage: Int) -> Double {
-        return ceil(Double(price)/Double(wage))
-    }
+ 
 }
 

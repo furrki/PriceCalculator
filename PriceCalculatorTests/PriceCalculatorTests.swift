@@ -22,8 +22,17 @@ class PriceCalculatorTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+       
     }
 
+    func testWageHours(){
+        XCTAssert(Wage.getHours(forWage: 50, andPrice: 50000) == 1000)
+        XCTAssert(Wage.getHours(forWage: 10, andPrice: 5) == 1)
+        XCTAssert(Wage.getHours(forWage: 20, andPrice: 20) == 1)
+        XCTAssert(Wage.getHours(forWage: 20, andPrice: 0) == 0)
+        XCTAssert(Wage.getHours(forWage: 0, andPrice: 20) == 0)
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measure {

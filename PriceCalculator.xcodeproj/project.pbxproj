@@ -16,6 +16,9 @@
 		84B3514621EFC82D00163D6C /* PriceCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3514521EFC82D00163D6C /* PriceCalculatorUITests.swift */; };
 		84B3515521EFCBD000163D6C /* darkbg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B3515421EFCBD000163D6C /* darkbg.jpg */; };
 		84B3515921EFCF8700163D6C /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84B3515821EFCF8700163D6C /* CurrencyTextField.swift */; };
+		84DD88E221F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
+		84DD88E321F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
+		84DD88E421F0D48C0083BC37 /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84DD88E121F0D48C0083BC37 /* Wage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,7 @@
 		84B3514721EFC82D00163D6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B3515421EFCBD000163D6C /* darkbg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = darkbg.jpg; sourceTree = "<group>"; };
 		84B3515821EFCF8700163D6C /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
+		84DD88E121F0D48C0083BC37 /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 		84B3512421EFC82A00163D6C /* PriceCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				84DD88E021F0D46B0083BC37 /* Model */,
 				84B3515721EFCF3B00163D6C /* View */,
 				84B3515621EFCF0600163D6C /* Controller */,
 				84B3515321EFCBB100163D6C /* Image */,
@@ -153,6 +158,14 @@
 				84B3515821EFCF8700163D6C /* CurrencyTextField.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		84DD88E021F0D46B0083BC37 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84DD88E121F0D48C0083BC37 /* Wage.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +301,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B3515921EFCF8700163D6C /* CurrencyTextField.swift in Sources */,
+				84DD88E221F0D48C0083BC37 /* Wage.swift in Sources */,
 				84B3512821EFC82A00163D6C /* MainVC.swift in Sources */,
 				84B3512621EFC82A00163D6C /* AppDelegate.swift in Sources */,
 			);
@@ -298,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B3513B21EFC82D00163D6C /* PriceCalculatorTests.swift in Sources */,
+				84DD88E321F0D48C0083BC37 /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B3514621EFC82D00163D6C /* PriceCalculatorUITests.swift in Sources */,
+				84DD88E421F0D48C0083BC37 /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
