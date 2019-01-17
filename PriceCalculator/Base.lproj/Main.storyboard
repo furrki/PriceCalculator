@@ -70,7 +70,7 @@
                                         <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done"/>
                                     </textField>
                                 </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.88052926936619713" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.73654819542253525" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="3YH-ZX-EVu" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="cWY-10-Pl7" secondAttribute="leading" constant="38" id="1kU-HY-WL9"/>
                                     <constraint firstItem="ojD-nq-9sc" firstAttribute="top" secondItem="cWY-10-Pl7" secondAttribute="top" constant="272" id="89l-js-Wgj"/>
