@@ -17,7 +17,7 @@ class MainVC: UIViewController {
     var labelsToToggle: [UILabel] = []
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        hourLabel.accessibilityIdentifier = "hoursLabel"
         labelsToToggle = [showLabel, hourLabel]
         
         let _ = labelsToToggle.map({ $0.isHidden = true })

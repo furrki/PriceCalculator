@@ -47,9 +47,9 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cpq-N0-83z">
                                         <rect key="frame" x="114.5" y="421" width="146" height="53"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-un-ftN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="hoursLabel" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mrA-un-ftN" userLabel="hoursLabel">
                                                 <rect key="frame" x="0.0" y="0.0" width="146" height="37"/>
-                                                <accessibility key="accessibilityConfiguration" label="hoursTf"/>
+                                                <accessibility key="accessibilityConfiguration" hint="hoursLabel" identifier="hoursLabel" label="hoursLabel"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="37" id="JqC-PK-4nE"/>
                                                     <constraint firstAttribute="width" constant="146" id="mq0-Dq-nux"/>

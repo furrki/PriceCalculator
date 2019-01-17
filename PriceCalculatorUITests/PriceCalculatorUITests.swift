@@ -25,8 +25,27 @@ class PriceCalculatorUITests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-    func testTextFields(){
-     
+    func testHoursAppear(){
+        
+        let app = XCUIApplication()
+        app.textFields["Your hourly wage"].tap()
+        
+        let key = app/*@START_MENU_TOKEN@*/.keys["2"]/*[[".keyboards.keys[\"2\"]",".keys[\"2\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        key.tap()
+        
+        let key2 = app/*@START_MENU_TOKEN@*/.keys["0"]/*[[".keyboards.keys[\"0\"]",".keys[\"0\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        key2.tap()
+        
+        let itemPriceTextField = app.textFields["Item price"]
+        itemPriceTextField.tap()
+        app/*@START_MENU_TOKEN@*/.keys["5"]/*[[".keyboards.keys[\"5\"]",".keys[\"5\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/.tap()
+        key2.tap()
+        key2.tap()
+        
+        app.buttons["Calculate"].tap()
+       
+        XCTAssertEqual(app.staticTexts["hoursLabel"].isHittable, true)
+        
     }
     func testExample() {
         // Use recording to get started writing UI tests.
